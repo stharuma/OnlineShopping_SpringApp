@@ -10,6 +10,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<javaee.version>8.0</javaee.version>
+		<spring.version>4.3.18.RELEASE</spring.version>
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
@@ -27,11 +28,18 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
 
 	</dependencies>
 	<build>
 		<plugins>
-		 <!-- update to the latest version of java -->
+			<!-- update to the latest version of java -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
