@@ -15,7 +15,7 @@ public class SMainController {
 		return mv;
 	}
 
-	@RequestMapping(value = "/test")
+	@RequestMapping(value = "/testRP")
 	// public ModelAndView test(@RequestParam("test") String greeting ) {
 	public ModelAndView test(@RequestParam(value="test", required=false) String greeting) {
 		if(greeting==null) {
